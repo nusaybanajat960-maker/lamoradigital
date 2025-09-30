@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../FONTS/Lato-Bold.ttf') format('truetype');
+}
+:root {
+  --nav-color: #45505b;
+  --nav-hover-color: #0563bb;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #212529;
+  --nav-dropdown-hover-color: #0563bb;
+  --contrast-color: #fff;
+  --default-color: #45505b;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: -200px;
+  width: 145px;
+  height: 100%;
+  z-index: 9999;
+  transition: left 0.3s ease;
+  margin-top: 160px;
+  margin-left: 7px;
+  font-family: "Lato-Bold";
+  font-weight: 600;
+}
+
+.sidebar-show {
+  left: 0;
+}
+
+/* Hamburger Toggle Button */
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px; /* moved to top-right */
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10000;
+  color: #E2A149;
+}
+
+/* Navmenu Styles */
+.navmenu {
+  padding: 0;
+}
+
+.navmenu ul {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 1px 10px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  border-radius: 50px;
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.navmenu a i {
+  font-size: 22px;
+}
+
+.navmenu a span {
+  padding: 0 5px 0 7px;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu li:hover > a {
+  color: #1C404C;
+  background: white;
+}
+
+/* Desktop Behavior */
+@media (min-width: 992px) {
+  .sidebar {
+    left: 0;
+  }
+
+  .sidebar-toggle {
+    display: none;
+  }
+
+  .navmenu a {
+    max-width: 56px;
+    justify-content: center;
+  }
+
+  .navmenu a span {
+    display: none;
+  }
+
+  .navmenu a:hover {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .navmenu a:hover span {
+    display: inline;
+  }
+}
+
+/* Mobile Behavior */
+@media (max-width: 991px) { 
+  .sidebar {
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    background-color: var(--nav-mobile-background-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar-show {
+    left: 0;
+  }
+
+  .navmenu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .navmenu a {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    background: none;
+    border-radius: 0;
+  }
+
+  .navmenu a i {
+    font-size: 20px;
+  }
+
+  .navmenu a span {
+    display: none;
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu li:hover > a {
+    color: #1C404C;
+    background: white;
+  }
+}

@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #336575 0%, #2b525f 30%, #1C404C 70%, #1C404C 100%);
+  min-height: 100vh;
+  margin: 0; 
+}
+
+/*
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+*/
+/* Dark overlay for better text visibility */
+.hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  color: #fff; /* White text */
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* Cursor style */
+.typed-cursor {
+  font-weight: bold;
+  font-size: 26px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+  color: var(--accent-color, #E2A149);
+}
+
+.hero .social-links {
+  margin-top: 25px;
+}
+
+.hero .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.hero .social-links a:hover {
+  color: var(--accent-color, #E2A149);
+}
+
+@media (max-width: 768px) {
+  .hero .text1 .animate {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../FONTS/Lato-Bold.ttf') format('truetype');
+}
+
+    #works{
+        color: wheat;
+        text-align: center;
+    }
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      /* border: 1px solid #ccc;  Optional: border around the grid */
+      width: 90%;
+      margin: 0 auto; /* Center the grid */
+      padding: 10px;
+    }
+
+    .work-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none; /* remove underline from link */
+      color: inherit; /* keep text color if any */
+      height: 100px;
+    }
+
+    .work-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .work-card img {
+      max-width: 100%;
+      max-height: 60px;
+      object-fit: contain;
+    }
+
+    #works h1{
+      font-family: "Lato-Bold";
+      font-weight: 400;
+      color: #1C404C;
+      margin-top: 130px;
+      font-size: 35px;
+      padding-top: 20px;
+    }
+    #works .works-description{
+    text-align: center;
+    color: #1C404C;
+    font-family: "Lato-Bold";
+    font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      #works h1{
+        padding-top: 0px;
+        margin-top: -58px;
+      }
+    }

@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../FONTS/Lato-Bold.ttf') format('truetype');
+}
+
+.footer {
+  color: #1C404C;
+  text-align: center;
+  padding: 40px 0;
+  font-family: 'Lato-Bold';
+  background-color: whitesmoke;
+}
+
+.footer h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.footer .tagline {
+  color: #1C404C;
+  margin-bottom: 20px;
+}
+
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1C404C;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: #E2A149;
+}
+
+.footer hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 25px auto;
+  width: 90%;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer .credits {
+  font-size: 13px;
+}
+
+.footer .credits a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.footer .credits a:hover {
+  text-decoration: underline;
+}
+
+.nav .nav-item .nav-link{
+  color: #1C404C;
+}

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../FONTS/Lato-Bold.ttf') format('truetype');
+}
+
+
+.rotating-text {
+  font-family: "Lato-Bold";
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  transform: translateX(-80px);
+  text-align: left;
+  margin-left: 84px;
+  margin-top: 10px;
+ 
+
+  p {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+
+    .word {
+      position: absolute;
+      display: flex;
+      opacity: 0;
+
+      .letter {
+        transform-origin: center center 25px;
+
+        &.out {
+          transform: rotateX(90deg);
+          transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+        }
+        &.in {
+          transition: 0.38s ease;
+        }
+        &.behind {
+          transform: rotateX(-90deg);
+        }
+      }
+    }
+  }
+}
+
+/* palette: https://flatuicolors.com/palette/ */
+.alizarin {
+  color: #E2A149;
+}
+
+.wisteria {
+  color: #E2A149;
+}
+
+.peter-river {
+  color: #E2A149;
+}
+
+.emerald {
+  color: #E2A149;
+}
+
+.sun-flower {
+  color: #E2A149;
+}

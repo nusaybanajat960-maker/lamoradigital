@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../FONTS/Lato-Regular.ttf') format('truetype');
+}
+.meet-box h1{
+  text-align: center;
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  font-size: 35px;
+  margin-top: 50px;
+  padding-top: 50px;
+  color: #1C404C;
+}
+.meet-box {
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  padding: 30px;
+  width: 850px;
+  height: 400px;
+  text-align: justify;
+  margin-top: 100px;
+  color: white;
+  font-size: 19.9px;
+  color: #1C404C;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%; /* Ensure content stays within the viewport */
+  margin: 0 auto; /* Center the content */
+}
+
+
+@media (max-width: 768px) {
+  #meet {
+    height: auto;   /* fit content height */
+    min-height: 100vh; /* optional: ensures it doesn’t look too small */
+  }
+  .meet-box{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 0px; /* remove space under meet section */
+  }
+
+  .meet-box h1{
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+}
+

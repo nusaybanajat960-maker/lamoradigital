@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: transparent;
+}
+
+#works {
+    height: auto;
+    padding-bottom: 200px;
+}
+#members {
+    height: auto;
+    padding-bottom: 200px;
+}
+
+#logo img {
+    width: 110px;
+    margin: 15px;
+}
+
+/* Ensure sections fit within the viewport */
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Responsive adjustments for sections */
+@media (max-width: 992px) {
+    section {
+        height: 100; /* Adjust height for tablets */
+        padding: 50px 0; /* Reduce padding */
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        height: 100; /* Adjust height for mobile */
+    }
+    #works {
+        height: auto; /* Allow height to adjust based on content */
+        padding-bottom: 330px; /* Add some padding */
+    }
+    #services {
+        height: auto; /* Allow height to adjust based on content */
+        padding-bottom: 1500px; /* Add some padding */
+        padding-top: 250px; /* Add some padding */
+    }
+    #members {
+        height: auto; /* Allow height to adjust based on content */
+        padding-bottom: 240px; /* Add some padding */
+    }
+    #contact{
+        height: 59vh;
+    }
+
+}
+
+/* Center the logo on mobile */
+@media (max-width: 768px) {
+    #logo {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #logo img {
+    width: 150px;
+    margin: 15px;
+}
+}
