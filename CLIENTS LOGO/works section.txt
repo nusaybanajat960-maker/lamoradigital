@@ -1,0 +1,22 @@
+
+  <!-- works Section -->
+  <section id="works">
+
+    <h1>Our Clients</h1>
+    <p class="works-description">
+        Explore our creative and professional works that showcase innovation and excellence.
+    </p>
+
+    <div class="works">
+
+    <a href="https://rekangroup.com/" target="_blank" class="work-card">
+      <img src="CLIENTS LOGO/rekan group.jpg" alt="Rekan Group">
+    </a>
+    <!--
+     <a href="#" target="_blank" class="work-card">
+      <img src="#" alt="Not Available">
+    </a> 
+    -->
+  </div>
+
+  </section> 
